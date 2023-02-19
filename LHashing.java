@@ -1,15 +1,14 @@
 import java.util.*;
-public class Hashing
+public class LHashing
 {
     public static void main(String args[])
     {
-        HashSet<Integer> set = new HashSet<>();
+        LinkedHashSet<Integer> set = new LinkedHashSet<>();
         set.add(1);
-        set.add(2);
-        set.add(3);
-        set.add(3);
         set.add(4);
-        set.remove(2);
+        set.add(3);
+        set.add(5);
+        set.add(2);
         Iterator<Integer> it = set.iterator();
         while(it.hasNext())
         {
@@ -17,4 +16,4 @@ public class Hashing
         }
     }
 }
-//Display by sorting
+//Display without sorting
